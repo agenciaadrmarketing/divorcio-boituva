@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+<link rel="icon" href="data:,">
+<style>x-dc{display:none!important}html,body{margin:0;background:#0B0B0B}</style>
+<link rel="preload" as="image" href="uploads/hero-divorcio.webp" imagesrcset="uploads/hero-divorcio-m.webp 828w, uploads/hero-divorcio.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/lexend-deca-latin-300-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/lexend-deca-latin-600-normal.woff2" crossorigin>
+<link rel="preload" as="script" href="vendor/react.production.min.js">
+<link rel="preload" as="script" href="vendor/react-dom.production.min.js">
+<style>@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:300;font-display:swap;src:url(fonts/lexend-deca-latin-300-normal.woff2) format('woff2')}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/lexend-deca-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/lexend-deca-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/lexend-deca-latin-600-normal.woff2) format('woff2')}</style>
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
+<script src="./support.js?v=2" defer></script>
 </head>
 <body>
 <x-dc>
 <helmet>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="preload" as="image" href="uploads/hero-divorcio.webp" imagesrcset="uploads/hero-divorcio-m.webp 828w, uploads/hero-divorcio.webp 1600w" imagesizes="100vw" fetchpriority="high">
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <title>Advogado de Divórcio em Boituva/SP | Vieira &amp; Marques</title>
 <meta name="language" content="pt-BR">
 <meta name="theme-color" content="#0B0B0B">
@@ -52,7 +57,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://vieiraemarquesadvogados.com/"},{"@type":"ListItem","position":2,"name":"Áreas de Atuação","item":"https://vieiraemarquesadvogados.com/areas-de-atuacao/"},{"@type":"ListItem","position":3,"name":"Advogado de Divórcio em Boituva/SP","item":"https://divorcio-boituva.vieiraemarquesadvogados.com/"}]}
 </script>
-<script src="./mapa-brasil.js?v=3" defer=""></script>
+<script src="./mapa-brasil.js?v=4" defer=""></script>
 <style>
   html, body { margin: 0; padding: 0; background: #0B0B0B; }
   html { scroll-behavior: smooth; }
@@ -246,7 +251,7 @@
   .pc-on { opacity: 1; }
   .pc-off { opacity: 0; }
   .pc-tab-on { opacity: 1; }
-  .pc-tab-off { opacity: .55; }
+  .pc-tab-off { opacity: .8; }
   @keyframes pcBarra { from { width: 0; } to { width: 100%; } }
   .pc-tab-on .pc-bar { animation: pcBarra 5s linear forwards; }
   .pc-tab-off .pc-bar { width: 0 !important; animation: none; }
@@ -273,14 +278,15 @@
   <header style="position: sticky; top: 0; z-index: 60; background: rgba(11,11,11,0.94); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.12);">
     <div style="max-width: 1180px; margin: 0 auto; padding: 13px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
       <a href="#" aria-label="Página inicial — Vieira &amp; Marques" style="display: block;">
-        <img src="uploads/logo-vm.webp" fetchpriority="high" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" width="160" height="40" class="logo-topo" style="height: 40px; width: auto; display: block; filter: invert(1);">
+        <img src="uploads/logo-vm.webp" fetchpriority="high" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" width="180" height="40" class="logo-topo" style="height: 40px; width: auto; display: block; filter: invert(1);">
       </a>
       <a href="{{ waLink }}" data-msg="Oi, vim pelo site e gostaria de falar com um advogado de divórcio de Boituva." target="_blank" rel="noopener" class="cta-topo cta-shine" style="color: #FFFFFF; padding: 12px 22px; border-radius: 3px; font-size: 14px; font-weight: 600; white-space: nowrap;">Falar no WhatsApp</a>
     </div>
   </header>
 
+  <main id="conteudo">
   <section class="sec hero-sec" style="position: relative; padding: 108px 24px 124px; background: #0B0B0B; overflow: hidden;">
-    <img src="uploads/hero-divorcio.webp" srcset="uploads/hero-divorcio-m.webp 828w, uploads/hero-divorcio.webp 1600w" sizes="100vw" fetchpriority="high" decoding="async" alt="Advogado orientando casal sobre partilha de bens no divórcio" width="2560" height="1440" class="hero-bg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center; display: block;">
+    <img src="uploads/hero-divorcio.webp" srcset="uploads/hero-divorcio-m.webp 828w, uploads/hero-divorcio.webp 1600w" sizes="100vw" fetchpriority="high" decoding="async" alt="Advogado orientando casal sobre partilha de bens no divórcio" width="1600" height="893" class="hero-bg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% center; display: block;">
     <div class="hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(100deg, #0B0B0B 0%, #0B0B0B 22%, rgba(11,11,11,0.88) 42%, rgba(11,11,11,0.6) 68%, rgba(11,11,11,0.32) 100%); pointer-events: none;"></div>
     <div style="position: absolute; inset: 0; background: linear-gradient(to top, #0B0B0B 0%, transparent 32%); pointer-events: none;"></div>
     <div class="split" style="position: relative; max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 660px); gap: 52px; align-items: center;">
@@ -342,7 +348,7 @@
             <div style="width: 42px; height: 42px; border-radius: 9px; border: 1px solid #DCDCDC; background: #F4F4F4; display: flex; align-items: center; justify-content: center; flex: none;">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="#0B0B0B" aria-hidden="true"><path d="M4 4h11l5 5v11H4V4zm11 1.5V9h3.5L15 5.5zM7 12h10v1.6H7V12zm0 3.4h10V17H7v-1.6zM7 8.6h6v1.6H7V8.6z"></path></svg>
             </div>
-            <div style="font-size: 12px; font-weight: 600; color: #9A9A9A; letter-spacing: 0.08em;">01</div>
+            <div style="font-size: 12px; font-weight: 600; color: #595959; letter-spacing: 0.08em;">01</div>
           </div>
           <h3 style="font-size: 19px; font-weight: 600; margin: 2px 0 0; line-height: 1.35;">Divórcio consensual</h3>
           <p style="font-size: 15.5px; font-weight: 300; line-height: 1.68; color: #4A4A4A; margin: 0;">Quando o casal está de acordo, conduzimos o processo de forma rápida, em cartório ou judicialmente, sem desgaste.</p>
@@ -352,7 +358,7 @@
             <div style="width: 42px; height: 42px; border-radius: 9px; border: 1px solid #DCDCDC; background: #F4F4F4; display: flex; align-items: center; justify-content: center; flex: none;">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="#0B0B0B" aria-hidden="true"><path d="M12 2l1.6 4.6L18 8l-4.4 1.4L12 14l-1.6-4.6L6 8l4.4-1.4L12 2zM5 15h2.4v6.8H5V15zm5.8 0h2.4v6.8h-2.4V15zm5.8 0H19v6.8h-2.4V15z"></path></svg>
             </div>
-            <div style="font-size: 12px; font-weight: 600; color: #9A9A9A; letter-spacing: 0.08em;">02</div>
+            <div style="font-size: 12px; font-weight: 600; color: #595959; letter-spacing: 0.08em;">02</div>
           </div>
           <h3 style="font-size: 19px; font-weight: 600; margin: 2px 0 0; line-height: 1.35;">Divórcio litigioso</h3>
           <p style="font-size: 15.5px; font-weight: 300; line-height: 1.68; color: #4A4A4A; margin: 0;">Quando não há acordo, representamos seus interesses com firmeza perante o juiz, do início até a sentença.</p>
@@ -362,7 +368,7 @@
             <div style="width: 42px; height: 42px; border-radius: 9px; border: 1px solid #DCDCDC; background: #F4F4F4; display: flex; align-items: center; justify-content: center; flex: none;">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="#0B0B0B" aria-hidden="true"><path d="M12 2l8 3.2v5.5c0 4.7-3.3 8.9-8 10.3-4.7-1.4-8-5.6-8-10.3V5.2L12 2zm-1 12.6l5-5-1.5-1.5-3.5 3.5-1.6-1.6L8 11.5l3 3.1z"></path></svg>
             </div>
-            <div style="font-size: 12px; font-weight: 600; color: #9A9A9A; letter-spacing: 0.08em;">03</div>
+            <div style="font-size: 12px; font-weight: 600; color: #595959; letter-spacing: 0.08em;">03</div>
           </div>
           <h3 style="font-size: 19px; font-weight: 600; margin: 2px 0 0; line-height: 1.35;">Guarda e convivência dos filhos</h3>
           <p style="font-size: 15.5px; font-weight: 300; line-height: 1.68; color: #4A4A4A; margin: 0;">Definição de guarda compartilhada ou unilateral e do regime de convivência, sempre com foco no bem-estar das crianças.</p>
@@ -372,7 +378,7 @@
             <div style="width: 42px; height: 42px; border-radius: 9px; border: 1px solid #DCDCDC; background: #F4F4F4; display: flex; align-items: center; justify-content: center; flex: none;">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="#0B0B0B" aria-hidden="true"><path d="M12 3l9 4.2V9H3V7.2L12 3zM5 10.5h2.4v6.8H5v-6.8zm5.8 0h2.4v6.8h-2.4v-6.8zm5.8 0H19v6.8h-2.4v-6.8zM3.5 19h17v2h-17v-2z"></path></svg>
             </div>
-            <div style="font-size: 12px; font-weight: 600; color: #9A9A9A; letter-spacing: 0.08em;">04</div>
+            <div style="font-size: 12px; font-weight: 600; color: #595959; letter-spacing: 0.08em;">04</div>
           </div>
           <h3 style="font-size: 19px; font-weight: 600; margin: 2px 0 0; line-height: 1.35;">Pensão alimentícia</h3>
           <p style="font-size: 15.5px; font-weight: 300; line-height: 1.68; color: #4A4A4A; margin: 0;">Fixação, revisão ou execução de pensão para filhos ou ex-cônjuge, com base na real necessidade e capacidade de cada parte.</p>
@@ -382,7 +388,7 @@
             <div style="width: 42px; height: 42px; border-radius: 9px; border: 1px solid #DCDCDC; background: #F4F4F4; display: flex; align-items: center; justify-content: center; flex: none;">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="#0B0B0B" aria-hidden="true"><path d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13 3.5zM8 11h8v1.6H8V11zm0 3.4h8V16H8v-1.6zM8 7.6h3v1.6H8V7.6z"></path></svg>
             </div>
-            <div style="font-size: 12px; font-weight: 600; color: #9A9A9A; letter-spacing: 0.08em;">05</div>
+            <div style="font-size: 12px; font-weight: 600; color: #595959; letter-spacing: 0.08em;">05</div>
           </div>
           <h3 style="font-size: 19px; font-weight: 600; margin: 2px 0 0; line-height: 1.35;">Partilha de bens</h3>
           <p style="font-size: 15.5px; font-weight: 300; line-height: 1.68; color: #4A4A4A; margin: 0;">Divisão de bens, imóveis e patrimônio conforme o regime de casamento, com atenção a cada detalhe do que foi construído em conjunto.</p>
@@ -421,7 +427,7 @@
           <div style="background: #FFFFFF; border: 1px solid #EDEDED; border-radius: 20px; padding: 8px; box-shadow: 0 20px 40px -18px rgba(11,11,11,0.22);">
             <svg viewBox="0 0 24 24" width="30" height="30" fill="#0B0B0B" style="display: block; margin: 10px auto 18px;" aria-hidden="true"><path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z"></path></svg>
             <div style="background: #F4F4F4; border: 1px solid #E6E6E6; border-radius: 14px; padding: 20px 18px;">
-              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #9A9A9A; display: block; margin-bottom: 8px;">01</span>
+              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #595959; display: block; margin-bottom: 8px;">01</span>
               <h3 style="font-size: 19px; font-weight: 600; color: #0B0B0B; margin: 0 0 8px; line-height: 1.25;">Você conta o que está acontecendo</h3>
               <p style="font-size: 13.5px; font-weight: 300; line-height: 1.55; color: #6E6E6E; margin: 0;">Pelo WhatsApp, do jeito que der. Conte sua situação — não precisa ter tudo decidido ainda.</p>
             </div>
@@ -431,7 +437,7 @@
           <div style="background: #FFFFFF; border: 1px solid #EDEDED; border-radius: 20px; padding: 8px; box-shadow: 0 20px 40px -18px rgba(11,11,11,0.22);">
             <svg viewBox="0 0 24 24" width="30" height="30" fill="#0B0B0B" style="display: block; margin: 10px auto 18px;" aria-hidden="true"><path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z"></path></svg>
             <div style="background: #F4F4F4; border: 1px solid #E6E6E6; border-radius: 14px; padding: 20px 18px;">
-              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #9A9A9A; display: block; margin-bottom: 8px;">02</span>
+              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #595959; display: block; margin-bottom: 8px;">02</span>
               <h3 style="font-size: 19px; font-weight: 600; color: #0B0B0B; margin: 0 0 8px; line-height: 1.25;">Avaliamos a melhor estratégia</h3>
               <p style="font-size: 13.5px; font-weight: 300; line-height: 1.55; color: #6E6E6E; margin: 0;">Analisamos se o divórcio pode ser consensual e como ficam guarda, pensão e partilha de bens no seu caso.</p>
             </div>
@@ -441,7 +447,7 @@
           <div style="background: #FFFFFF; border: 1px solid #EDEDED; border-radius: 20px; padding: 8px; box-shadow: 0 20px 40px -18px rgba(11,11,11,0.22);">
             <svg viewBox="0 0 24 24" width="30" height="30" fill="#0B0B0B" style="display: block; margin: 10px auto 18px;" aria-hidden="true"><path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z"></path></svg>
             <div style="background: #F4F4F4; border: 1px solid #E6E6E6; border-radius: 14px; padding: 20px 18px;">
-              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #9A9A9A; display: block; margin-bottom: 8px;">03</span>
+              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #595959; display: block; margin-bottom: 8px;">03</span>
               <h3 style="font-size: 19px; font-weight: 600; color: #0B0B0B; margin: 0 0 8px; line-height: 1.25;">Buscamos o acordo possível</h3>
               <p style="font-size: 13.5px; font-weight: 300; line-height: 1.55; color: #6E6E6E; margin: 0;">Sempre que há espaço, buscamos consenso com a outra parte antes de judicializar qualquer ponto.</p>
             </div>
@@ -451,7 +457,7 @@
           <div style="background: #FFFFFF; border: 1px solid #EDEDED; border-radius: 20px; padding: 8px; box-shadow: 0 20px 40px -18px rgba(11,11,11,0.22);">
             <svg viewBox="0 0 24 24" width="30" height="30" fill="#0B0B0B" style="display: block; margin: 10px auto 18px;" aria-hidden="true"><path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z"></path></svg>
             <div style="background: #F4F4F4; border: 1px solid #E6E6E6; border-radius: 14px; padding: 20px 18px;">
-              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #9A9A9A; display: block; margin-bottom: 8px;">04</span>
+              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #595959; display: block; margin-bottom: 8px;">04</span>
               <h3 style="font-size: 19px; font-weight: 600; color: #0B0B0B; margin: 0 0 8px; line-height: 1.25;">Protocolamos o divórcio</h3>
               <p style="font-size: 13.5px; font-weight: 300; line-height: 1.55; color: #6E6E6E; margin: 0;">Consensual em cartório ou via judicial; sem acordo, conduzimos a ação litigiosa com pedido de urgência quando cabível.</p>
             </div>
@@ -461,7 +467,7 @@
           <div style="background: #FFFFFF; border: 1px solid #EDEDED; border-radius: 20px; padding: 8px; box-shadow: 0 20px 40px -18px rgba(11,11,11,0.22);">
             <svg viewBox="0 0 24 24" width="30" height="30" fill="#0B0B0B" style="display: block; margin: 10px auto 18px;" aria-hidden="true"><path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z"></path></svg>
             <div style="background: #F4F4F4; border: 1px solid #E6E6E6; border-radius: 14px; padding: 20px 18px;">
-              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #9A9A9A; display: block; margin-bottom: 8px;">05</span>
+              <span style="font-family: Georgia, serif; font-style: italic; font-size: 34px; color: #595959; display: block; margin-bottom: 8px;">05</span>
               <h3 style="font-size: 19px; font-weight: 600; color: #0B0B0B; margin: 0 0 8px; line-height: 1.25;">Você vira essa página</h3>
               <p style="font-size: 13.5px; font-weight: 300; line-height: 1.55; color: #6E6E6E; margin: 0;">Divórcio homologado, guarda e pensão definidas — com clareza sobre cada direito que é seu.</p>
             </div>
@@ -568,7 +574,7 @@
               <img src="{{ d.foto }}" loading="lazy" decoding="async" alt="{{ d.nome }}" style="width: 44px; height: 44px; flex: none; border-radius: 999px; object-fit: cover; display: block;">
               <span style="display: flex; flex-direction: column;">
                 <span style="font-size: 14.5px; font-weight: 600; color: #0B0B0B;">{{ d.nome }}</span>
-                <span style="font-size: 13px; font-weight: 300; color: #8A8A8A;">{{ d.origem }}</span>
+                <span style="font-size: 13px; font-weight: 300; color: #595959;">{{ d.origem }}</span>
               </span>
             </figcaption>
           </figure>
@@ -580,7 +586,7 @@
               <img src="{{ d.foto }}" loading="lazy" decoding="async" alt="{{ d.nome }}" style="width: 44px; height: 44px; flex: none; border-radius: 999px; object-fit: cover; display: block;">
               <span style="display: flex; flex-direction: column;">
                 <span style="font-size: 14.5px; font-weight: 600; color: #0B0B0B;">{{ d.nome }}</span>
-                <span style="font-size: 13px; font-weight: 300; color: #8A8A8A;">{{ d.origem }}</span>
+                <span style="font-size: 13px; font-weight: 300; color: #595959;">{{ d.origem }}</span>
               </span>
             </figcaption>
           </figure>
@@ -594,7 +600,7 @@
               <img src="{{ d.foto }}" loading="lazy" decoding="async" alt="{{ d.nome }}" style="width: 44px; height: 44px; flex: none; border-radius: 999px; object-fit: cover; display: block;">
               <span style="display: flex; flex-direction: column;">
                 <span style="font-size: 14.5px; font-weight: 600; color: #0B0B0B;">{{ d.nome }}</span>
-                <span style="font-size: 13px; font-weight: 300; color: #8A8A8A;">{{ d.origem }}</span>
+                <span style="font-size: 13px; font-weight: 300; color: #595959;">{{ d.origem }}</span>
               </span>
             </figcaption>
           </figure>
@@ -606,7 +612,7 @@
               <img src="{{ d.foto }}" loading="lazy" decoding="async" alt="{{ d.nome }}" style="width: 44px; height: 44px; flex: none; border-radius: 999px; object-fit: cover; display: block;">
               <span style="display: flex; flex-direction: column;">
                 <span style="font-size: 14.5px; font-weight: 600; color: #0B0B0B;">{{ d.nome }}</span>
-                <span style="font-size: 13px; font-weight: 300; color: #8A8A8A;">{{ d.origem }}</span>
+                <span style="font-size: 13px; font-weight: 300; color: #595959;">{{ d.origem }}</span>
               </span>
             </figcaption>
           </figure>
@@ -620,7 +626,7 @@
               <img src="{{ d.foto }}" loading="lazy" decoding="async" alt="{{ d.nome }}" style="width: 44px; height: 44px; flex: none; border-radius: 999px; object-fit: cover; display: block;">
               <span style="display: flex; flex-direction: column;">
                 <span style="font-size: 14.5px; font-weight: 600; color: #0B0B0B;">{{ d.nome }}</span>
-                <span style="font-size: 13px; font-weight: 300; color: #8A8A8A;">{{ d.origem }}</span>
+                <span style="font-size: 13px; font-weight: 300; color: #595959;">{{ d.origem }}</span>
               </span>
             </figcaption>
           </figure>
@@ -632,7 +638,7 @@
               <img src="{{ d.foto }}" loading="lazy" decoding="async" alt="{{ d.nome }}" style="width: 44px; height: 44px; flex: none; border-radius: 999px; object-fit: cover; display: block;">
               <span style="display: flex; flex-direction: column;">
                 <span style="font-size: 14.5px; font-weight: 600; color: #0B0B0B;">{{ d.nome }}</span>
-                <span style="font-size: 13px; font-weight: 300; color: #8A8A8A;">{{ d.origem }}</span>
+                <span style="font-size: 13px; font-weight: 300; color: #595959;">{{ d.origem }}</span>
               </span>
             </figcaption>
           </figure>
@@ -659,7 +665,7 @@
             <div class="pc-bar" style="position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: #EDEDED; z-index: 0;"></div>
             <div style="position: relative; z-index: 1;">
               <h3 style="font-size: 14.5px; font-weight: 700; margin: 0 0 4px; color: #0B0B0B;">{{ s.titulo }}</h3>
-              <p style="font-size: 12.5px; font-weight: 400; color: #6E6E6E; margin: 0; line-height: 1.4;">{{ s.desc }}</p>
+              <p style="font-size: 12.5px; font-weight: 400; color: #4F4F4F; margin: 0; line-height: 1.4;">{{ s.desc }}</p>
             </div>
           </button>
         </sc-for>
@@ -823,10 +829,12 @@
     <iframe title="Localização do escritório Vieira &amp; Marques em Boituva/SP" src="https://www.google.com/maps?q=Rua+Benedita+Sanson+Labronici,+180,+Ch%C3%A1cara+Labronici,+Boituva,+SP&output=embed" width="100%" height="360" style="display: block; border: 0; margin-top: 48px; filter: grayscale(1) invert(0.92) contrast(0.88);" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
+  </main>
+
   <footer style="background: #050505;">
     <div class="foot-grid" style="max-width: 1180px; margin: 0 auto; padding: 64px 24px 56px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 48px;">
       <div style="display: grid; gap: 26px; align-content: start;">
-        <img src="uploads/logo-vm.webp" fetchpriority="high" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" style="width: 100%; max-width: 380px; height: auto; display: block; filter: invert(1);">
+        <img src="uploads/logo-vm.webp" loading="lazy" decoding="async" width="400" height="89" alt="Vieira &amp; Marques Sociedade de Advogados" style="width: 100%; max-width: 380px; height: auto; display: block; filter: invert(1);">
         <div style="display: flex; gap: 12px;">
           <a href="https://www.facebook.com/vieiraemarques.advogados" target="_blank" rel="noopener" aria-label="Facebook" style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center;" style-hover="border-color: #FFFFFF;">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="#EDEDED" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.2c0-.9.3-1.5 1.5-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H7.5v3h2.7v8h3.3z"></path></svg>
@@ -861,8 +869,8 @@
     </div>
     <div style="border-top: 1px solid rgba(255,255,255,0.08); padding: 26px 24px 30px;">
       <div style="max-width: 1180px; margin: 0 auto; display: grid; gap: 14px; text-align: center;">
-        <p style="font-size: 13.5px; font-weight: 300; color: #B4B4B4; margin: 0;">Copyright © 2026 Vieira &amp; Marques Sociedade de Advogados | Site desenvolvido por <a href="https://agenciaadrmarketing.com/" target="_blank" rel="noopener" style="color: #EDEDED;">agenciaadrmarketing.com</a></p>
-        <p style="font-size: 12.5px; font-weight: 300; line-height: 1.65; color: #5A5A5A; margin: 0;">Esta página tem caráter meramente informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. Não há oferta de serviços, captação de clientela, promessa de resultado ou garantia de devolução de valores. Cada caso é analisado individualmente.</p>
+        <p style="font-size: 13.5px; font-weight: 300; color: #B4B4B4; margin: 0;">Copyright © 2026 Vieira &amp; Marques Sociedade de Advogados | Site desenvolvido por <a href="https://agenciaadrmarketing.com/" target="_blank" rel="noopener" style="color: #EDEDED; text-decoration: underline;">agenciaadrmarketing.com</a></p>
+        <p style="font-size: 12.5px; font-weight: 300; line-height: 1.65; color: #9A9A9A; margin: 0;">Esta página tem caráter meramente informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. Não há oferta de serviços, captação de clientela, promessa de resultado ou garantia de devolução de valores. Cada caso é analisado individualmente.</p>
       </div>
     </div>
   </footer>
@@ -870,7 +878,7 @@
   <div class="flutuante" style="position: fixed; bottom: 22px; right: 22px; z-index: 80; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; max-width: calc(100vw - 44px);">
     <sc-if value="{{ balaoAberto }}" hint-placeholder-val="{{ true }}">
     <div class="balao" style="position: relative; background: #FFFFFF; color: #0B0B0B; border-radius: 14px; padding: 16px 40px 16px 18px; width: 290px; box-shadow: 0 4px 14px rgba(0,0,0,0.22);">
-      <button onClick="{{ fecharBalao }}" aria-label="Fechar" style="position: absolute; top: 8px; right: 10px; background: none; border: none; color: #9A9A9A; font-size: 18px; line-height: 1; cursor: pointer; padding: 4px;" style-hover="color: #0B0B0B;">×</button>
+      <button onClick="{{ fecharBalao }}" aria-label="Fechar" style="position: absolute; top: 8px; right: 10px; background: none; border: none; color: #595959; font-size: 18px; line-height: 1; cursor: pointer; padding: 4px;" style-hover="color: #0B0B0B;">×</button>
       <p style="font-size: 15px; font-weight: 600; line-height: 1.35; margin: 0;">{{ balaoTitulo }}</p>
       <p style="font-size: 13.5px; font-weight: 300; line-height: 1.5; color: #4A4A4A; margin: 6px 0 0;">{{ balaoSubtitulo }}</p>
       <span style="position: absolute; right: 30px; bottom: -7px; width: 14px; height: 14px; background: #FFFFFF; transform: rotate(45deg);"></span>
