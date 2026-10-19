@@ -38,7 +38,9 @@ const { css, body } = await page.evaluate(() => {
 await browser.close(); server.close(); unlinkSync(join(root, '__prerender_src.html'));
 
 const fixed = body.replace(/\breveal in\b/g, 'reveal');
+// O hero do snapshot é mais alto que o real (+90px) para que a imagem real, ao entrar, nunca
+// seja maior que a do snapshot e não vire um novo candidato a LCP (que atrasaria o LCP até o React montar).
 const swap = `<script>(function(){var h=document.getElementById('pre');if(!h)return;var d=0;function go(){if(d)return;d=1;requestAnimationFrame(function(){requestAnimationFrame(function(){var s=document.getElementById('pre-css');h.remove();if(s)s.remove();})})}function w(){var r=document.getElementById('dc-root');if(!r){return}if(r.childNodes.length){go();return}new MutationObserver(function(m,o){if(r.childNodes.length){o.disconnect();go()}}).observe(r,{childList:true})}new MutationObserver(function(m,o){if(document.getElementById('dc-root')){o.disconnect();w()}}).observe(document.body,{childList:true});})();</script>`;
-const block = `${START}<style id="pre-css">${css}\n#pre ~ #dc-root{display:none}</style><div id="pre">${fixed}</div>${swap}${END}`;
+const block = `${START}<style id="pre-css">${css}\n#pre ~ #dc-root{display:none}\n#pre .hero-sec{padding-bottom:214px!important}</style><div id="pre">${fixed}</div>${swap}${END}`;
 writeFileSync(join(root, 'index.html'), clean.replace('<x-dc>', block + '\n<x-dc>'));
 console.log('snapshot:', Math.round(block.length / 1024), 'KB');
